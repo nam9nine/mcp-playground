@@ -1,6 +1,6 @@
 # 간단한 MCP 서버/클라이언트 예제
 
-이 프로젝트는 FastMCP 라이브러리를 사용하여 간단한 MCP(Message Communication Protocol) 서버와 클라이언트를 구현한 예제입니다.
+이 프로젝트는 FastMCP 라이브러리를 사용하여 간단한 MCP(Model Context Protocol) 서버와 클라이언트를 구현한 예제입니다.
 
 ## 간편 실행 방법 (추천)
 
