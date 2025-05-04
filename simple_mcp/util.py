@@ -12,6 +12,11 @@ class LoggingPythonStdioTransport(PythonStdioTransport):
             orig_receive = session._read_stream.receive
 
             async def send_wrapper(message):
+                try:
+                    raw = message.model_dump_json()
+                except Exception:
+                    raw = str(message)
+                print("→ RAW Request JSON-RPC:", raw)
                 return await orig_send(message)
 
             async def receive_wrapper():
